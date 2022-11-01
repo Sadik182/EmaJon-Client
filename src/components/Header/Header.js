@@ -9,8 +9,9 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div className="header">
-            <img className="logo" src={logo} alt="" />
             <nav>
+                
+                <NavLink to="/"><img className="logo" src={logo} alt="" /></NavLink>
                 <NavLink to="/shop">Shop</NavLink>
                 <NavLink to="/review">Order Review</NavLink>
                 <NavLink to="/inventory">Manage Inventory</NavLink>
