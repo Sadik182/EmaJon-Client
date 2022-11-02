@@ -26,7 +26,7 @@ const Shop = () => {
                 const pageNumber = Math.ceil(count / size);
                 setPageCount(pageNumber);
             });
-    }, [page]);
+    }, [page, size]);
 
 
 
