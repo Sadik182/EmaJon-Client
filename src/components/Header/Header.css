@@ -2,7 +2,9 @@
     text-align: center;
 }
 .logo{
-    height: 50px;
+    height: 30px;
+    padding: 10px;
+    margin-left: auto;
 }
 .header nav {
     background-color: black;
@@ -12,9 +14,6 @@
     text-decoration: none;
     color: white;
     margin-right: 20px;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
-}
-.header nav a:hover{
-    background-color: lightgray;
 }

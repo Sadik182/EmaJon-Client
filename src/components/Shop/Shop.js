@@ -11,9 +11,10 @@ const Shop = () => {
     const [cart, setCart] = useCart(products);
     const [page, setPage] = useState(0)
     const [pageCount, setPageCount] = useState(0);
+    const [size, setSize] = useState(10)
     // products to be rendered on the UI
     const [displayProducts, setDisplayProducts] = useState([]);
-    const size = 10;
+    // const size = 10;
 
     useEffect(() => {
         fetch(`http://localhost:5000/products?page=${page}&&size=${size}`)
@@ -83,6 +84,13 @@ const Shop = () => {
                             {number + 1}</button>
                         )
                         }
+                       
+                        <select onChange={e => setSize(e.target.value)}>
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
                     </div>
 
                 </div>
